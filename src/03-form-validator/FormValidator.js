@@ -12,8 +12,6 @@ export default function FormValidator () {
     const validateEmail = email.match(/^\S+@\S+\.\S+$/);
     let validatePassword = false;
 
-    console.log(validateEmail);
-
     if (password === passwordConfirm) {
       validatePassword = password.length > 8;
     }
